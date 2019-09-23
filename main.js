@@ -1,5 +1,6 @@
 var recipe = {
     name: "Keto Quiche Recipe",
+    mainimg: "assets/whole_quiche.jpg",
     section: [
         {
         sectiontitle: "Ingredients",
@@ -73,6 +74,9 @@ var recipe = {
 
 var titleH2 = document.getElementById("title");
 titleH2.innerText = recipe.name;
+
+var foodIMG = document.getElementById("food");
+foodIMG.src = recipe.mainimg;
 
 var ingredientsandpreparationDIV = document.getElementById("ingredientsandpreparation");
 
