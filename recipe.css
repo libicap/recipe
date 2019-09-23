@@ -46,3 +46,8 @@ header {
 .hero h1 {
     color:white;
 }
+
+.wholefood img {
+    height: 200px;
+    width: 100%;
+}
