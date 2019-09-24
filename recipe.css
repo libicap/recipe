@@ -1,14 +1,16 @@
+body{
+    margin: 0px;
+}
 .wholefood img {
     height: 600px;
     width: 70%;
 }
 
 .headercontainer {
-   position: fixed;
+   position: sticky;
    display: flex;
    justify-content: space-between;
    background-color: aquamarine;
-}
-.titlecontainer {
-    margin-top: 200px;
+   top:0;
+   align-items: center;
 }
