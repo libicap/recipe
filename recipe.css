@@ -2,3 +2,13 @@
     height: 600px;
     width: 70%;
 }
+
+.headercontainer {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   background-color: aquamarine;
+}
+.titlecontainer {
+    margin-top: 200px;
+}
