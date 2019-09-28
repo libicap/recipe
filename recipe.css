@@ -2,7 +2,6 @@ body{
     margin: 0px;
     font-family: 'Lato', sans-serif;
     background-color: #fff8ee;
-    width: 900px;
     margin:auto;
 }
 .wholefood img {
@@ -16,4 +15,13 @@ body{
    background-color: aquamarine;
    top:0;
    align-items: center;
+}
+
+.begin {
+    max-width: 900px;
+    margin: auto;
+}
+
+.wholefood {
+    margin-left: 30px;
 }
