@@ -1,9 +1,12 @@
 body{
     margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff8ee;
+    width: 900px;
+    margin:auto;
 }
 .wholefood img {
     height: 600px;
-    width: 70%;
 }
 
 .headercontainer {
