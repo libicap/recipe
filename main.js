@@ -79,6 +79,7 @@ var foodIMG = document.getElementById("food");
 foodIMG.src = recipe.mainimg;
 
 var ingredientsandpreparationDIV = document.getElementById("ingredientsandpreparation");
+var ingredientsDIV = document.getElementById("ingredients");
 
 for (var i=0; i<recipe.section.length; i=i+1){
 
