@@ -38,3 +38,11 @@ body{
 header nav a:hover {
     border-bottom: solid #F17192 3px;
 }
+
+.picandintro {
+    display:flex;
+}
+
+.wholefood {
+    flex:1;
+}

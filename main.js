@@ -1,3 +1,7 @@
+var foodintro = {
+    introwords: "Here is some place to write about intro intro intro aaa xxxx fhgsdf,jghsjdfgh lkj. Ajshfalksjdhfkjashdfkj", 
+}
+
 var recipe = {
     name: "Keto Quiche Recipe",
     mainimg: "assets/whole_quiche.jpg",
@@ -72,6 +76,12 @@ var recipe = {
 
 };
 
+var introductionDIV = document.getElementById("introduction");
+var introP = document.createElement("p");
+introP.innerText = foodintro.introwords;
+introductionDIV.appendChild(introP);
+
+
 var titleH2 = document.getElementById("title");
 titleH2.innerText = recipe.name;
 
@@ -109,4 +119,10 @@ for (var i=0; i<recipe.section.length; i=i+1){
 
 };
 
+function clickQuicheRecipe (){
+    console.log("Hello");
+}
 
+function clickRecipe (){
+    console.log("hello2");
+}
