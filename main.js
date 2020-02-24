@@ -150,7 +150,6 @@ var baconRecipe = {
 
 };
 
-
 function setRecipe (recipe){
 
     var introductionDIV = document.getElementById("introduction");
@@ -196,12 +195,14 @@ function setRecipe (recipe){
 
     };
 }
+
 setRecipe(quicheRecipe);
 
-function clickQuicheRecipe (){
+
+function clickQuicheRecipe() {
     setRecipe(quicheRecipe);
 }
 
-function clickRecipe (){
+function clickBaconRecipe (){
     setRecipe(baconRecipe);
 }
