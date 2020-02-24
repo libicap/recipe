@@ -198,6 +198,24 @@ function setRecipe (recipe){
 
 setRecipe(quicheRecipe);
 
+var isOpen = false;
+
+function clickRecipes(){
+    var recipesbox = document.getElementById("recipesbox");
+    
+    if (isOpen == true) {
+        recipesbox.classList.remove("visible");
+        isOpen = false;
+    }
+    else {
+        recipesbox.classList.add("visible");  
+        isOpen = true;
+    }
+
+
+}
+
+
 
 function clickQuicheRecipe() {
     setRecipe(quicheRecipe);
@@ -206,3 +224,4 @@ function clickQuicheRecipe() {
 function clickBaconRecipe (){
     setRecipe(baconRecipe);
 }
+

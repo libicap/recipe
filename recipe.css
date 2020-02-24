@@ -46,3 +46,16 @@ header nav a:hover {
 .wholefood {
     flex:1;
 }
+
+.recipesdropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #8ff9f6;
+    border: solid #F17192 3px;
+    padding: 10px;
+}
+
+.visible {
+    display: flex;
+}
