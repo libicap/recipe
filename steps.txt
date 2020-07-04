@@ -1,0 +1,8 @@
+<Step when click on Quiche Recipe until title h2 name change> 
+step 1 - check which function to call when click on Quiche Recipe - > onclick="clickQuicheRecipe()" 
+step 2 - jump to and execute function clickQuicheRecipe()
+step 3 - function clickQuicheRecipe calls setRecipe(quicheRecipe) 
+step 4 - jump to and execute function setRecipe (recipe) with argument recipe = quicheRecipe
+step 5 - find titleH2 in html file - document.getElementById("title") - <h2 id="title"
+step 6 - recipe.name -> quicheRecipe.name -> Keto Quiche Recipe 
+step 7 - replacement - titleH2.innerText = Keto Quiche Recipe 

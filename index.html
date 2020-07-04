@@ -2,20 +2,28 @@
 <head>
     <title>Recipe</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href ="recipe.css" rel ="stylesheet" type ="text/css">
 </head>
 
 <body>
-    <link href ="recipe.css" rel ="stylesheet" type ="text/css">
     <header class="headercontainer">
         <h1>All Recipes</h1>
         <nav>
-            <a href="#" onclick="clickRecipes()">Recipes</a>
+            <a href="#" onclick="clickMenu('recipesbox')">Recipes</a>
             <div class="recipesdropdown" id="recipesbox" >
                 <a href="#" onclick="clickQuicheRecipe()">Quiche Recipe</a>
                 <a href="#" onclick="clickBaconRecipe()">Bacon Recipe</a>
             </div>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#" onclick="clickMenu('aboutbox')" >About</a>
+            <div class="recipesdropdown" id="aboutbox" >
+                <a href="#" onclick="clickQuicheRecipe()">Quiche Recipe</a>
+                <a href="#" onclick="clickBaconRecipe()">Bacon Recipe</a>
+            </div>
+            <a href="#" onclick="clickMenu('contactbox')">Contact</a>
+            <div class="recipesdropdown" id="contactbox" >
+                <a href="#" onclick="clickQuicheRecipe()">Quiche Recipe</a>
+                <a href="#" onclick="clickBaconRecipe()">Bacon Recipe</a>
+            </div>
         </nav>
     </header>
     <div>

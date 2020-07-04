@@ -158,9 +158,10 @@ function setRecipe (recipe){
     introP.innerText = foodintro.introwords;
     introductionDIV.appendChild(introP);
 
-
-    var titleH2 = document.getElementById("title");
-    titleH2.innerText = recipe.name;
+    //var titleH2 = document.getElementById("title");
+    //titleH2.innerText = recipe.name; 
+    
+    document.getElementById("title").innerText = recipe.name;
 
     var foodIMG = document.getElementById("food");
     foodIMG.src = recipe.mainimg;
@@ -196,23 +197,22 @@ function setRecipe (recipe){
     };
 }
 
-setRecipe(quicheRecipe);
+setRecipe(baconRecipe);
 
 var isOpen = false;
 
-function clickRecipes(){
-    var recipesbox = document.getElementById("recipesbox");
+function clickMenu(menuId){
+
+    var menuDiv = document.getElementById(menuId);
     
     if (isOpen == true) {
-        recipesbox.classList.remove("visible");
+        menuDiv.classList.remove("visible");
         isOpen = false;
     }
     else {
-        recipesbox.classList.add("visible");  
+        menuDiv.classList.add("visible");  
         isOpen = true;
     }
-
-
 }
 
 
