@@ -152,7 +152,11 @@ var baconRecipe = {
 
 var currentRecipe;
 
+var imgNumber = 0;
+
 function setRecipe (recipe){
+
+    imgNumber = 0;
     currentRecipe = recipe;
     var introductionDIV = document.getElementById("introduction");
     introductionDIV.innerHTML = '';
@@ -165,8 +169,10 @@ function setRecipe (recipe){
     
     document.getElementById("title").innerText = recipe.name;
 
-    var foodIMG = document.getElementById("carousellimg");
-    foodIMG.src = recipe.images[0];
+    // var foodIMG = document.getElementById("carousellimg");
+    // foodIMG.src = recipe.images[0];
+
+    updateImg();
 
     var ingredientsandpreparationDIV = document.getElementById("ingredientsandpreparation");
     ingredientsandpreparationDIV.innerHTML = '';
@@ -216,27 +222,30 @@ function clickMenu(menuId){
         isOpen = true;
     }
 }
-var imgNumber = 0;
+
+function updateImg() {
+    var foodIMG = document.getElementById("carousellimg");
+    foodIMG.src = currentRecipe.images[imgNumber];
+}
 
 function clickRight() {
-    var foodIMG = document.getElementById("carousellimg");
     imgNumber = imgNumber + 1;
 
     if (imgNumber > currentRecipe.images.length-1){
         imgNumber = 0;
     }
 
-    foodIMG.src = currentRecipe.images[imgNumber];
+    updateImg();
 }
 
 function clickLeft() {
-    var foodIMG = document.getElementById("carousellimg");
     imgNumber = imgNumber - 1;
     
     if (imgNumber<0) {
         imgNumber = currentRecipe.images.length-1;
     }
-    foodIMG.src = currentRecipe.images[imgNumber];
+
+    updateImg();
 }
 
 
