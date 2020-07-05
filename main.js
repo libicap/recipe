@@ -4,7 +4,7 @@ var foodintro = {
 
 var quicheRecipe = {
     name: "Keto Quiche Recipe",
-    mainimg: "assets/whole_quiche.jpg",
+    images: ["assets/whole_quiche.jpg","assets/cupcake.jpg","assets/tart.jpg"],
     section: [
         {
         sectiontitle: "Ingredients",
@@ -78,7 +78,7 @@ var quicheRecipe = {
 
 var baconRecipe = {
     name: "Bacon Quiche Recipe",
-    mainimg: "assets/quiche_hero.jpg",
+    images: ["assets/quiche_hero.jpg"],
     section: [
         {
         sectiontitle: "Ingredients",
@@ -163,8 +163,8 @@ function setRecipe (recipe){
     
     document.getElementById("title").innerText = recipe.name;
 
-    var foodIMG = document.getElementById("food");
-    foodIMG.src = recipe.mainimg;
+    var foodIMG = document.getElementById("carousellimg");
+    foodIMG.src = recipe.images[0];
 
     var ingredientsandpreparationDIV = document.getElementById("ingredientsandpreparation");
     ingredientsandpreparationDIV.innerHTML = '';
