@@ -150,8 +150,10 @@ var baconRecipe = {
 
 };
 
-function setRecipe (recipe){
+var currentRecipe;
 
+function setRecipe (recipe){
+    currentRecipe = recipe;
     var introductionDIV = document.getElementById("introduction");
     introductionDIV.innerHTML = '';
     var introP = document.createElement("p");
@@ -197,7 +199,7 @@ function setRecipe (recipe){
     };
 }
 
-setRecipe(baconRecipe);
+setRecipe(quicheRecipe);
 
 var isOpen = false;
 
@@ -214,7 +216,17 @@ function clickMenu(menuId){
         isOpen = true;
     }
 }
+var imgNumber = 0;
 
+function clickRight() {
+    var foodIMG = document.getElementById("carousellimg");
+    imgNumber = imgNumber + 1;
+    foodIMG.src = currentRecipe.images[imgNumber];
+}
+
+function clickLeft() {
+    imgNumber = imgNumber - 1;
+}
 
 
 function clickQuicheRecipe() {
