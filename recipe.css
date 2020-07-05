@@ -59,3 +59,16 @@ header nav a:hover {
 .visible {
     display: flex;
 }
+
+.carousellimage {
+    height: 100%;
+}
+
+.carousell {
+    height: 300px;
+    display: flex;
+}
+
+.arrow {
+    height: 100%;
+}
