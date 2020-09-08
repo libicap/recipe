@@ -179,6 +179,7 @@ function setRecipe (recipe){
 
     for (var i=0; i<recipe.section.length; i=i+1){
         var sectiontitleH2 = document.createElement("h2");
+        sectiontitleH2.id = recipe.section[i].sectiontitle + "-title";
         sectiontitleH2.innerText = recipe.section[i].sectiontitle;
         ingredientsandpreparationDIV.appendChild(sectiontitleH2);
 
