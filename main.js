@@ -263,3 +263,9 @@ function clickRecipe(recipe) {
 //     setRecipe(baconRecipe);
 // }
 
+function clickTopic(idTitle){
+
+    var correctH2 = document.getElementById(idTitle);
+    correctH2.scrollIntoView();
+
+}
