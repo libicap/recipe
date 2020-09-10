@@ -72,3 +72,7 @@ header nav a:hover {
 .arrow {
     height: 100%;
 }
+
+.topic {
+    cursor: pointer;
+}

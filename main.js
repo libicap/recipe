@@ -266,6 +266,6 @@ function clickRecipe(recipe) {
 function clickTopic(idTitle){
 
     var correctH2 = document.getElementById(idTitle);
-    correctH2.scrollIntoView();
+    correctH2.scrollIntoView({behavior:"smooth"});
 
 }
