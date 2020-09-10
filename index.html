@@ -11,8 +11,8 @@
         <nav>
             <a href="#" onclick="clickMenu('recipesbox')">Recipes</a>
             <div class="recipesdropdown" id="recipesbox" >
-                <a href="#" onclick="clickQuicheRecipe()">Quiche Recipe</a>
-                <a href="#" onclick="clickBaconRecipe()">Bacon Recipe</a>
+                <a href="#" onclick="clickRecipe(quicheRecipe)">Quiche Recipe</a>
+                <a href="#" onclick="clickRecipe(baconRecipe)">Bacon Recipe</a>
             </div>
             <a href="#" onclick="clickMenu('aboutbox')" >About</a>
             <div class="recipesdropdown" id="aboutbox" >
@@ -28,7 +28,7 @@
     </header>
     <div>
         <h2 id="title" class="titlecontainer"></h2>
-        <a href= "#Ingredients-title">Go to Ingredients</a>
+        <a href= "#Ingredients-title" onclick="clickTopic('')">Go to Ingredients</a>
         <a href= "#Preparation-title">Go to Preparation</a>
     </div>
     <div class="carousell">

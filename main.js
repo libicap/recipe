@@ -249,12 +249,17 @@ function clickLeft() {
     updateImg();
 }
 
-
-function clickQuicheRecipe() {
-    setRecipe(quicheRecipe);
+function clickRecipe(recipe) {
+    setRecipe(recipe);
 }
 
-function clickBaconRecipe (){
-    setRecipe(baconRecipe);
-}
+
+
+// function clickQuicheRecipe() {
+//     setRecipe(quicheRecipe);
+// }
+
+// function clickBaconRecipe (){
+//     setRecipe(baconRecipe);
+// }
 
