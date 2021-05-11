@@ -75,4 +75,6 @@ header nav a:hover {
 
 .topic {
     cursor: pointer;
+    display: block;
 }
+

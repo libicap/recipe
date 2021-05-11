@@ -1,0 +1,53 @@
+.reckon {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content {
+    width: 800px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.topicH2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+
+@media (max-width: 1012px){
+    .content {
+      width: 100%;
+      }
+  }
+    
+  
+  
+  @media (max-width: 766px){
+    .content {
+      width: 100%;
+      }
+  }
+  
+  
+  @media (max-width: 414px){
+    .content {
+      width: 100%;
+      }
+  }
+  
+  @media (max-width: 376px){
+    .content {
+      width: 100%;
+      }
+  }
+  
+  @media (max-width: 320px){
+    .content {
+      width: 100%;
+      }
+  } 
+    
+  
